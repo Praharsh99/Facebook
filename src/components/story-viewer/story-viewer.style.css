@@ -1,0 +1,71 @@
+.storyViewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.storyViewer__directionButton {
+  cursor: pointer;
+  color: #fff;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.storyViewer__directionButton:hover {
+  transform: scale(1.2);
+  background: #fff;
+  color: #000;
+}
+
+.storyViewer__directionButton-hide {
+  visibility: hidden;
+}
+
+.storyViewer__closeButton {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.storyViewer__closeButton:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.09);
+}
+
+.storyViewer__images {
+  width: 400px;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.08);
+}
+
+.storyViewer__centerInfo {
+  position: relative;
+  top: 85px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.storyViewer__centerInfo > h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+}

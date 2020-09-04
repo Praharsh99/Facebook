@@ -1,0 +1,20 @@
+.storyReel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.storyReel__addStory {
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  color: grey;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+
+.storyReel__addStory:hover {
+  transform: scale(1.09);
+}
